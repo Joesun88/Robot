@@ -196,7 +196,7 @@ model-viewer {
   field-of-view="auto">
 
   <button slot="ar-button" id="custom-ar-btn">
-    ?? AR 實境預覽
+     AR 實境預覽
   </button>
   
   <div class="company-info">
@@ -261,8 +261,8 @@ roughnessSlider.addEventListener("input", e => {
 mv.addEventListener("load", () => {
   mv.model.materials.forEach(mat => {
     const pbr = mat.pbrMetallicRoughness;
-    pbr.setMetallicFactor(0.85);
-    pbr.setRoughnessFactor(0.20);
+    pbr.setMetallicFactor(0.95);
+    pbr.setRoughnessFactor(0.04);
   });
 });
 </script>
